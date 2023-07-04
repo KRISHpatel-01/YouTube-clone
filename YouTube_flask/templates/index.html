@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>YouTube.com</title>
+        {% from 'macro_comp.html' import card %}
+        <link rel="stylesheet" href="static/style.css"/>
+    </head>
+    <body>
+        <div id="home">
+            {% for video in videos %}
+                {{ card(video) }}
+            {% endfor %}
+        </div>
+    </body>
+</html>
+
